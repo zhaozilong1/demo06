@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
-
+    <style>
+        tr{
+            border:1px solid #111;
+        }
+    </style>
 </head>
 <body>
+    <table>
 
+    </table>
 </body>
 </html>
 <script>
@@ -19,9 +25,9 @@
                 console.log(e)
                 var str = ""
                 for(var i=0;i<e.length;i++){
-                    str += "<h3>"+e[i].name+"</h3>"
+                    str += "<tr><td>"+e[i].name+"</td></tr>"
                 }
-                $("body").html(str)
+                $("table").html(str)
             }
         })
     })
